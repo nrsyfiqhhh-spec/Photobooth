@@ -6,11 +6,21 @@
   <title>Photobooth</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="template-classic">
 
   <div class="container">
     <h1>📸 Photobooth</h1>
-    <p>Click start camera, then capture your photos.</p>
+    <p>Choose template, start camera, then capture your photos.</p>
+
+    <div class="template-choice">
+      <label for="templateSelect">Choose Template:</label>
+      <select id="templateSelect">
+        <option value="classic">Classic Cream</option>
+        <option value="pink">Soft Pink</option>
+        <option value="vintage">Vintage Brown</option>
+        <option value="black">Black & White</option>
+      </select>
+    </div>
 
     <div class="camera-box">
       <video id="video" autoplay playsinline></video>
@@ -20,6 +30,7 @@
     <div class="buttons">
       <button id="startBtn">Start Camera</button>
       <button id="captureBtn">Capture</button>
+      <button id="resetBtn">Restart</button>
       <button id="downloadBtn">Download</button>
     </div>
 
