@@ -1,1 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7efe5;
+  color: #3b2f2f;
+  text-align: center;
+}
 
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px 15px;
+}
+
+.camera-box {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 12px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+video {
+  width: 100%;
+  border-radius: 15px;
+  transform: scaleX(-1);
+  filter: sepia(25%) contrast(105%) brightness(105%);
+}
+
+canvas {
+  display: none;
+}
+
+button {
+  padding: 12px 18px;
+  margin: 6px;
+  border: none;
+  border-radius: 25px;
+  background: #8b5e3c;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #6f482d;
+}
+
+.photo-strip {
+  width: 260px;
+  margin: 20px auto;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+}
+
+.photo-strip img {
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
