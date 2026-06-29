@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photobooth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div class="container">
+    <h1>📸 Photobooth</h1>
+    <p>Click start camera, then capture your photos.</p>
+
+    <div class="camera-box">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn">Start Camera</button>
+      <button id="captureBtn">Capture</button>
+      <button id="downloadBtn">Download</button>
+    </div>
+
+    <h2>Photo Strip</h2>
+    <div id="photoStrip" class="photo-strip"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
